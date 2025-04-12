@@ -1,0 +1,119 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Mail } from "lucide-react";
+
+export default function SlopCapital() {
+  return (
+    <div className="bg-gradient-to-b from-pink-50 to-white text-gray-800 font-sans p-6 max-w-5xl mx-auto space-y-12">
+      <header className="text-center space-y-4">
+        <h1 className="text-6xl font-extrabold tracking-tight text-pink-600">SLOP CAPITAL</h1>
+        <p className="text-2xl text-gray-600">Backed by Delusion. Run by Sam & Jerry.</p>
+        <p className="italic text-md text-gray-500">Harvard Law grads. Big dreams. No product sense.</p>
+      </header>
+
+      <section className="space-y-4">
+        <h2 className="text-4xl font-bold text-pink-700">ABOUT US</h2>
+        <p>
+          At <strong>SLOP Capital</strong>, we believe in chasing trends late,
+          funding founders who look like us, and investing in the kind of
+          "category-defining" startups that are mostly pitch decks and hype.
+        </p>
+        <p>
+          Our founders, <strong>Sam Garcia</strong> and <strong>Jerry Ting</strong>,
+          are proud to bring their combined experience in Law School GroupMe
+          replies and late-night TweetDeck scrolling to help you raise a
+          pre-seed round for your ChatGPT-powered Uber for CrossFit for Pets.
+        </p>
+        <p className="bg-pink-100 p-3 rounded-md inline-block">
+          We specialize in <Badge>SLOP</Badge>: <br />
+          <strong>S</strong>illy <strong>L</strong>ittle <strong>O</strong>verfunded <strong>P</strong>roducts
+        </p>
+      </section>
+
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card className="shadow-lg border-pink-200">
+          <CardContent className="space-y-3 p-6">
+            <h3 className="text-3xl font-semibold text-pink-600">👨‍⚖️ Jerry Ting</h3>
+            <p>
+              Co-Founder, Chief Vaporware Evangelist<br />
+              • Sold Evisort (a product no one used) to Workday in what analysts
+              called “a beautiful act of B2B misdirection.”<br />
+              • Thought he was building legal AI, but mostly built UI for email
+              attachments.<br />
+              • Once tricked a panel of judges by saying “GPT” three times fast.
+            </p>
+            <p className="italic text-sm text-gray-500">
+              Fun fact: His favorite SaaS metric is HTR – Hype-to-Revenue ratio.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="shadow-lg border-pink-200">
+          <CardContent className="space-y-3 p-6">
+            <h3 className="text-3xl font-semibold text-pink-600">🧢 Sam Garcia</h3>
+            <p>
+              General Partner, Chief Follower<br />
+              • Harvard Law ➡️ Amplo VC ➡️ Into your DMs, asking for a “quick 15 mins.”<br />
+              • Says things like “What’s your GTM motion?” but doesn’t know what GTM means.<br />
+              • Invests based on vibes and vibes alone.
+            </p>
+            <p className="italic text-sm text-gray-500">
+              Fun fact: Has never led a round, but absolutely crushes the retweet game.
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-4xl font-bold text-pink-700">📈 OUR PORTFOLIO</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li><strong>Petr.ai</strong> – AI for your dog’s mental health (YC W24)</li>
+          <li><strong>Clozr</strong> – A Chrome extension that lets you close tabs with your mind (backed by Lex Fridman)</li>
+          <li><strong>Fundrly</strong> – A platform to help VCs raise from other VCs who don’t ask too many questions</li>
+        </ul>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-4xl font-bold text-pink-700">🧃 WHAT WE LOOK FOR</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>Founders who dropped out of Stanford or at least hung out near it</li>
+          <li>Products with no traction but great "narratives"</li>
+          <li>Startups with <strong>AI</strong> in the name, <em>no AI</em> in the backend</li>
+          <li>Founders who think Sam and Jerry are smart (this is critical)</li>
+        </ul>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-4xl font-bold text-pink-700">🧃 SLOP SCHOOL</h2>
+        <p>Think of us as the cool college guys coming back to your high school pep rally:</p>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>We’ll wear Amiri jeans and drop acronyms like CAC and LTV</li>
+          <li>We’ll give vague advice like “just find product-market fit”</li>
+          <li>Then we’ll Venmo you $250k to burn on LinkedIn ads and SaaS fees</li>
+        </ul>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-4xl font-bold text-pink-700">🧿 APPLY FOR FUNDING</h2>
+        <p>
+          We use a proprietary diligence system called <strong>S.A.M.</strong><br />
+          <strong>S</strong>ell us your hype<br />
+          <strong>A</strong>llude to AI<br />
+          <strong>M</strong>ake us feel like we discovered you
+        </p>
+        <Button className="bg-pink-600 hover:bg-pink-700 text-white">
+          <Mail className="mr-2 h-4 w-4" /> pitch@slop.vc
+        </Button>
+      </section>
+
+      <footer className="border-t pt-6 text-sm text-gray-500 text-center">
+        <p>
+          ⚠️ DISCLAIMER: SLOP Capital is not legally responsible for any failed startups,
+          overhyped products, or inflated founder egos resulting from our involvement.
+        </p>
+        <p className="italic">Jerry still thinks he invented AI. Sam is just happy to be here.</p>
+      </footer>
+    </div>
+  );
+}
